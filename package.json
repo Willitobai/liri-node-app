@@ -2,10 +2,10 @@
   "name": "liri-node-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "liri.js",
   "dependencies": {
-    "axios": "^0.18.0",
     "dotenv": "^7.0.0",
+    "axios": "^0.18.0",
     "node-spotify-api": "^1.0.7"
   },
   "devDependencies": {},
@@ -14,13 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sammypaiz0606/liri-node-app.git"
+    "url": "git+https://github.com/Willitobai/liri-node-app.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sammypaiz0606/liri-node-app/issues"
+    "url": "https://github.com/Willitobai/liri-node-app/issues"
   },
-  "homepage": "https://github.com/sammypaiz0606/liri-node-app#readme"
+  "homepage": "https://github.com/Willitobai/liri-node-app#readme"
 }
