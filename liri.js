@@ -88,3 +88,19 @@ function grabText() {
         spotify_this(song);
     })
 }
+
+
+
+
+if (process.argv[2] === "concert-this") {
+    var artistName = process.argv.slice(3).join(' ');
+
+    request('https://rest.bandsintown.com/artists/' + artistName + '/events?app_id=codingbootcamp=upcoming',
+        function (error, response, art) {
+            var shows = JSON.parse(art)
+            console.dir(shows[0].venue.name);
+            console.dir(shows[0].venue.city);
+            console.dir(shows[0].venue.country);
+            console.dir(shows[0].datetime);
+        });
+};
