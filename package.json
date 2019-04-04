@@ -4,9 +4,11 @@
   "description": "",
   "main": "liri.js",
   "dependencies": {
-    "dotenv": "^7.0.0",
     "axios": "^0.18.0",
-    "node-spotify-api": "^1.0.7"
+    "dotenv": "^7.0.0",
+    "node": "^11.12.0",
+    "node-spotify-api": "^1.0.7",
+    "omdb": "^0.8.0"
   },
   "devDependencies": {},
   "scripts": {
