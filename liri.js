@@ -1,13 +1,12 @@
 require("dotenv").config();
-
 const keys = require('./keys.js')
 const Spotify = require('node-spotify-api')
-const omdb = require('omdb');
+// const omdb = require('omdb'); This wont work.
 const request = require('request');
 const fs = require('fs')
 
 const spotify = new Spotify(keys.spotify);
-// var client = new Twitter(keys.twitter);
+
 
 let [one, two, command, ...input] = process.argv;
 console.log(command);
@@ -20,10 +19,10 @@ switch (command) {
         console.log("this song rocks!")
         spotify_this(input);
         break
-    // case "movie-this":
-    //     console.log("Love this movie!")
-    //     movie_this(input);
-    //     break
+    case "movie-this":
+        console.log("Love this movie!")
+        movie_this(input);
+        break
     case "do-what-it-says":
         console.log("do the chicken dance!")
         grabText();
